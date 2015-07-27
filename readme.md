@@ -7,6 +7,6 @@
     npm install
     jspm install
 
-## Use gulp to serve:
+### Use gulp to serve:
     gulp
 
