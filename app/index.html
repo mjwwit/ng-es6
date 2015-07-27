@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS &amp; ES6</title>
+	<script src="../jspm_packages/system.js"></script>
+	<script src="../config.js"></script>
+	<script>
+		System.import('./app/demoApp');
+	</script>
+</head>
+<body ng-app="demoApp">
+<h1>AngularJS App using ES6</h1>
+
+<div ng-controller="HomeController as homeCtrl">
+	<h2>{{homeCtrl.title}}</h2>
+	<p>Messages:</p>
+	<ul>
+		<li ng-repeat="msg in homeCtrl.messages">{{msg}}</li>
+	</ul>
+	<button ng-click="homeCtrl.addMessage()">Add message!</button>
+</div>
+</body>
+</html>
